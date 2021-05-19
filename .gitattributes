@@ -7,7 +7,7 @@ MyMVP_OnBoardingTask(a)
 */
 
 SELECT 
-		p.Name AS PropertyNasme,
+		p.Name AS PropertyName,
 		p.Id AS PropertyId,
 		op.OwnerId
 FROM [dbo].[Property] p
