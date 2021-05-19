@@ -1,2 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+MyMVP_OnBoardingTask(a)
+/*This query will: Display a list of all property names and their property id’s for Owner Id: 1426. 
+*/
+
+SELECT 
+		p.Name AS PropertyNasme,
+		p.Id AS PropertyId,
+		op.OwnerId
+FROM [dbo].[Property] p
+JOIN [dbo].[OwnerProperty] op ON p.Id = op.Id
+WHERE ownerId = 1426
